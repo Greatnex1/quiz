@@ -91,6 +91,9 @@ var questions = [
 
     new Question ("What is the best programming language?",["Javascript","C#", "Php","Java", "There is no best programming language"], "Javascript"),
 
+    new Question ("Is Technical writing the same as Content writting?",["No","Yes", " Hell Yeah","I don't know"], "NO"),
+
+
     new Question("Is Akoni Noah Awesome?", ["Yes", "No","Maybe", "He's Okay"], "Yes"),
 
 ];
