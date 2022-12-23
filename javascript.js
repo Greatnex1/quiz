@@ -54,7 +54,7 @@ var QuizUI = {
     displayScore: function(){
         var gameOverHTML = "<h1>Quiz Ended</h1>"
          if(quiz.score <= 3){
-            gameOverHTML += "<h2>You got only : " + quiz.score +" questions correctly </h2>"
+            gameOverHTML += "<h2>You got only  " + quiz.score +" questions correctly </h2>"
             gameOverHTML += "<h3>Try better next time </h3>";
         }
     
