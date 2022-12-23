@@ -54,12 +54,12 @@ var QuizUI = {
     displayScore: function(){
         var gameOverHTML = "<h1>Quiz Ended</h1>"
          if(quiz.score <= 3){
-            gameOverHTML += "<h2>Your score is: " + quiz.score +"</h2>"
+            gameOverHTML += "<h2>You got only : " + quiz.score +" questions correctly </h2>"
             gameOverHTML += "<h3>Try better next time </h3>";
         }
     
         else{
-           // gameOverHTML += "<h2>Your score is: " + quiz.score + " over " + quiz.questions.length +"</h2>"
+           // gameOverHTML += "<h2>You got only : " + quiz.score + " over " + quiz.questions.length +"</h2>"
             gameOverHTML += "<h2>  Excellent! </h2>";        }
         this.populateIdWithHTML("quiz",gameOverHTML);
     },
@@ -83,7 +83,6 @@ var QuizUI = {
 };
 //Create Questions
 var questions = [
-
 
     new Question ("Who was the first president of the United States ?",["George Washington","Thomas Jefferson", " Thomas Edison,","I don't know"], "George Washington"),
 
