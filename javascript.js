@@ -83,6 +83,10 @@ var QuizUI = {
 };
 //Create Questions
 var questions = [
+
+    new Question ("wE ARE HAPPY TO HAVE YOU HERE"),
+
+
     new Question ("Who was the first president of the United States ?",["George Washington","Thomas Jefferson", " Thomas Edison,","I don't know"], "George Washington"),
 
     new Question ("What is the answer to the Ultiimate question of Life, the Universe and Everything?",["Pi","42", " Wah","I don't know"], "42"),
