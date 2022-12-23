@@ -84,8 +84,6 @@ var QuizUI = {
 //Create Questions
 var questions = [
 
-    new Question ("wE ARE HAPPY TO HAVE YOU HERE"),
-
 
     new Question ("Who was the first president of the United States ?",["George Washington","Thomas Jefferson", " Thomas Edison,","I don't know"], "George Washington"),
 
