@@ -36,6 +36,13 @@ body {
   margin: 0;
   padding-top: 2.5em; }
 
+  #count{
+    color: blue;
+    font-size: x-large;
+    margin: auto;
+    padding: auto;
+  }
+
 article,
 aside,
 details,
@@ -618,3 +625,4 @@ h2, .headline-secondary, .headline-secondary--grouped {
     
     .theme__poly .grid__col--3 {
       background-color: #D6EEF5; }
+
