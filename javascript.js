@@ -22,7 +22,7 @@ class Quiz {
     }
 }
 
-var count = 120;
+var count = 60;
 var timer = setInterval(function() {
     document.getElementById('count').innerHTML= count ;
     count--;
@@ -72,7 +72,7 @@ var QuizUI = {
     displayScore: function(){
         var gameOverHTML = "<h1>Quiz Ended</h1>"
          if(quiz.score <= 3){
-            gameOverHTML += "<h2>You got only  " + quiz.score +" questions correctly </h2>"
+            gameOverHTML += "<h2>You got only  " + quiz.score +" question(s) correctly </h2>"
             gameOverHTML += "<h3>Try better next time </h3>";
         }
     
@@ -107,18 +107,15 @@ var questions = [
 
     new Question ("Who was the first president of the United States ?",["George Washington","Thomas Jefferson", " Thomas Edison,","I don't know"], "George Washington"),
 
-    new Question ("What is the answer to the Ultiimate question of Life, the Universe and Everything?",["Pi","42", " Wah","I don't know"], "42"),
+    new Question ("What year did Nigeria gain her independence ?",["1990","1950", " 1900","1960"], "1960"),
 
-    new Question ("Do you love to code?",["No","Yes", " Hell Yeah","I don't know"], "Hell Yeah"),
+    new Question ("What year did Ghana gain her independen1900?",["1900","1935", " 1957","1963"], "1957"),
 
     new Question ("What is the best programming language?",["Javascript","C#", "Php","Java", "There is no best programming language"], "Javascript"),
 
     new Question ("Who is the father of computer?",["John Doe","Phillip Martinez", " Charles Barbage","I don't know"], "Charles Barbage"),
    
-   
     new Question ("Is Technical writing the same as Content writting?",["No","Yes", " Hell Yeah","I don't know"], "NO"),
-
-
 
     new Question("Is Akoni Noah Awesome?", ["Yes", "No","Maybe", "He's Okay"], "Yes"),
 
