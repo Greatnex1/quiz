@@ -1,18 +1,5 @@
 //const { Button } = require("bootstrap");
 
-var count = 20;
-var timer = setInterval(function() {
-    document.getElementById('count').innerHTML=count;
-    count--;
-    if (count === -1){
-     clearInterval(timer);
-    //   document.getElementById('count').innerHTML='Done';
-      // or...
-      alert("You're out of time!");
-      hasEnded()
-
-    }
-  }, 1000);
 
 class Quiz {
     
@@ -34,6 +21,22 @@ class Quiz {
         return this.currentQuestionIndex >= this.questions.length;
     }
 }
+
+var count = 120;
+var timer = setInterval(function() {
+    document.getElementById('count').innerHTML= count ;
+    count--;
+    if (count ==-1){
+     clearInterval(timer);
+       document.getElementById('count').innerHTML='TIME UP';
+      // or...
+      
+     window.alert("You're out of time!");
+       close()
+    }
+ 
+  }, 1000);
+
 
 class Question {
     constructor(text, choices, answer) {
@@ -123,3 +126,5 @@ var questions = [
 var quiz = new Quiz(questions);
 
 QuizUI.displayNext();
+
+
