@@ -1,6 +1,21 @@
 //const { Button } = require("bootstrap");
 
+var count = 20;
+var timer = setInterval(function() {
+    document.getElementById('count').innerHTML=count;
+    count--;
+    if (count === -1){
+     clearInterval(timer);
+    //   document.getElementById('count').innerHTML='Done';
+      // or...
+      alert("You're out of time!");
+      hasEnded()
+
+    }
+  }, 1000);
+
 class Quiz {
+    
     constructor(questions) {
         this.score = 0;
         this.questions = questions;
@@ -78,9 +93,12 @@ var QuizUI = {
     displayProgress: function(){
         var currentQuestionNumber = quiz.currentQuestionIndex+1;
         this.populateIdWithHTML("progress", "Question " + currentQuestionNumber + " of " + quiz.questions.length)
-    }
+    },
+    
 
 };
+
+
 //Create Questions
 var questions = [
 
