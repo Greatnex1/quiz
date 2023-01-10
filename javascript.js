@@ -109,7 +109,7 @@ var questions = [
 
     new Question ("What year did Nigeria gain her independence ?",["1990","1950", " 1900","1960"], "1960"),
 
-    new Question ("What year did Ghana gain her independen1900?",["1900","1935", " 1957","1963"], "1957"),
+    new Question ("What year did Ghana gain her independence?",["1900","1935", " 1957","1963"], "1957"),
 
     new Question ("What is the best programming language?",["Javascript","C#", "Php","Java", "There is no best programming language"], "Javascript"),
 
